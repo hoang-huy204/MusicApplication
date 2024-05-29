@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="582.0" prefWidth="720.0" style="-fx-background-color: #191818;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Circle fx:id="imagecircle" fill="#2197ff" layoutX="348.0" layoutY="118.0" radius="72.0" stroke="WHITE" strokeType="OUTSIDE" />
+      <Label layoutX="110.0" layoutY="234.0" text="FullName" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="110.0" layoutY="284.0" text="Email" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="110.0" layoutY="334.0" text="PassWord" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Button fx:id="upava" layoutX="456.0" layoutY="158.0" mnemonicParsing="false" onAction="#uploadImagepro" style="-fx-background-color: black;" text="Uploadavatar" textFill="#b5dd8d">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="changepass" layoutX="523.0" layoutY="331.0" mnemonicParsing="false" onAction="#handlechangepass" style="-fx-background-color: black;" text="Change Password" textFill="#b5dd8d">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="savepro" layoutX="299.0" layoutY="414.0" mnemonicParsing="false" style="-fx-background-color: black;" text="SaveProfile" textFill="#b5dd8d">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <TextField fx:id="namelabel" layoutX="242.0" layoutY="233.0" prefHeight="31.0" prefWidth="269.0" />
+      <TextField fx:id="emaillabel" layoutX="242.0" layoutY="283.0" prefHeight="31.0" prefWidth="269.0" />
+      <PasswordField fx:id="passwordlabel" editable="false" layoutX="242.0" layoutY="333.0" prefHeight="31.0" prefWidth="269.0" />
+   </children>
+</AnchorPane>

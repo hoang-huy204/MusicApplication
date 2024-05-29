@@ -1,0 +1,20 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 1 thg 3, 2024, 15:50:40
+    Author     : daoqu
+*/
+
+.border_wrap {
+    -fx-background-radius: 16px;
+}
+
+*.button {
+    -fx-background-color: transparent;
+}
+
+.upload_image_wrap {
+    -fx-background-color: linear-gradient(#846170, #70929c);
+}

@@ -1,0 +1,12 @@
+.border_wrap {
+    -fx-background-radius: 16px;
+}
+
+*.button {
+    -fx-background-color: transparent;
+}
+
+.upload_image_wrap {
+    -fx-background-color: linear-gradient(#846170, #70929c);
+}
+

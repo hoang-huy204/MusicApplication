@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="searchSection" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="610.0" prefWidth="868.0" style="-fx-background-color: black;" stylesheets="@../../static/css/UI/Search.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controller.SearchController">
+   <children>
+      <HBox fx:id="playlistHbox" layoutX="2.0" layoutY="145.0" prefHeight="187.0" prefWidth="863.0" />
+      <TextField fx:id="search" alignment="CENTER" editable="true" layoutX="22.0" layoutY="14.0" nodeOrientation="LEFT_TO_RIGHT" onKeyReleased="#handleSearchKey" opacity="0.67" prefHeight="46.0" prefWidth="298.0" promptText="Search ..." style="-fx-background-color: grey;" styleClass="border_wrap">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="31.0" fitWidth="31.0" layoutX="39.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/timkiem.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="25.0" layoutY="106.0" text="Playlists" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="353.0" text="Songs" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="currentPageLabel" layoutX="427.0" layoutY="338.0" text="1" textFill="#46bc4f">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="totalPagesLabel" layoutX="467.0" layoutY="339.0" text="1" textFill="#46bc4f">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <ScrollPane hbarPolicy="NEVER" layoutX="-3.0" layoutY="392.0" prefHeight="202.0" prefWidth="868.0" style="-fx-background-insets: 1;" vbarPolicy="NEVER">
+         <content>
+            <AnchorPane minHeight="201.0" minWidth="0.0" prefWidth="868.0" style="-fx-background-color: black;">
+               <children>
+                  <VBox fx:id="Trackvbox" prefWidth="868.0" />
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <FontAwesomeIconView fx:id="nextPageButton" fill="#46bc4f" glyphName="CHEVRON_RIGHT" layoutX="514.0" layoutY="369.0" onMouseClicked="#handleNextPage" size="36" stroke="#378648" />
+      <FontAwesomeIconView fx:id="previousPageButton" fill="#46bc4f" glyphName="CHEVRON_LEFT" layoutX="364.0" layoutY="368.0" onMouseClicked="#handlePreviousPage" size="36" />
+   </children>
+</AnchorPane>

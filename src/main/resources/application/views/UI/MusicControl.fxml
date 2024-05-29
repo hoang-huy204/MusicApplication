@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="59.0" prefWidth="953.0" style="-fx-background-color: #000;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controller.MusicControlController">
+   <children>
+      <Circle fx:id="mucsicImgCd" fill="#f2f2f2" layoutX="34.0" layoutY="30.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Label fx:id="labelSong" layoutX="60.0" layoutY="11.0" prefHeight="20.0" prefWidth="135.0" text="Label" textFill="#fffbfb">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="singersSong" layoutX="60.0" layoutY="30.0" prefHeight="18.0" prefWidth="135.0" text="Label" textFill="#a9a5a5" />
+      <ProgressBar fx:id="songProressControl" layoutX="262.0" layoutY="43.0" prefHeight="9.0" prefWidth="355.0" progress="0.3">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ProgressBar>
+      <ProgressBar fx:id="volumnSongControl" layoutX="741.0" layoutY="25.0" prefHeight="10.0" prefWidth="62.0" progress="0.3">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ProgressBar>
+      <FontAwesomeIconView fill="WHITE" glyphName="VOLUME_UP" layoutX="717.0" layoutY="37.0" size="18" />
+      <Label fx:id="timeCurrentProressSong" alignment="CENTER_RIGHT" layoutX="213.0" layoutY="39.0" prefHeight="18.0" prefWidth="46.0" text="0:00" textFill="#a9a5a5" />
+      <Label fx:id="timeEndProressSong" layoutX="634.0" layoutY="39.0" prefHeight="18.0" prefWidth="40.0" text="0:00" textFill="#a9a5a5" />
+      <StackPane fx:id="playIconWrapper" layoutX="428.0" layoutY="2.0" prefHeight="12.0" prefWidth="18.0">
+         <children>
+            <Circle fill="WHITE" radius="16.0" stroke="BLACK" strokeType="INSIDE" />
+            <FontAwesomeIconView fx:id="playIcon" glyphName="PLAY" selectionEnd="0" size="18" stroke="BLACK" strokeWidth="0.0" />
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </StackPane>
+      <StackPane fx:id="randomIconWrapper" layoutX="365.0" layoutY="2.0" prefHeight="34.0" prefWidth="40.0">
+         <children>
+            <FontAwesomeIconView fx:id="randomIcon" fill="WHITE" glyphName="RANDOM" selectionEnd="0" size="18" stroke="BLACK" strokeWidth="0.0" />
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </StackPane>
+      <StackPane fx:id="preIconWrapper" layoutX="391.0" layoutY="2.0" prefHeight="34.0" prefWidth="40.0">
+         <children>
+            <FontAwesomeIconView fx:id="preIcon" fill="WHITE" glyphName="STEP_BACKWARD" selectionEnd="0" size="18" stroke="BLACK" strokeWidth="0.0" />
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </StackPane>
+      <StackPane fx:id="nextIconWrapper" layoutX="457.0" layoutY="1.0" prefHeight="34.0" prefWidth="40.0">
+         <children>
+            <FontAwesomeIconView fx:id="nextIcon" fill="WHITE" glyphName="STEP_FORWARD" selectionEnd="0" size="18" stroke="BLACK" strokeWidth="0.0" />
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </StackPane>
+      <StackPane fx:id="repeatIconWrapper" layoutX="496.0" layoutY="10.0" prefHeight="12.0" prefWidth="10.0">
+         <children>
+            <FontAwesomeIconView fx:id="repeatIcon" fill="WHITE" glyphName="REPEAT" selectionEnd="0" size="18" stroke="BLACK" strokeWidth="0.0" wrappingWidth="18.0" />
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </StackPane>
+      <FontAwesomeIconView fx:id="favaouriteIcon" fill="WHITE" glyphName="HEART" layoutX="205.0" layoutY="34.0" size="17">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></FontAwesomeIconView>
+      <FontAwesomeIconView fx:id="lyricsIcon" fill="WHITE" glyphName="STICKY_NOTE" layoutX="666.0" layoutY="34.0" size="17">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </FontAwesomeIconView>
+      <ChoiceBox fx:id="accountChoice" layoutX="848.0" layoutY="17.0" prefHeight="26.0" prefWidth="91.0" />
+   </children>
+</AnchorPane>

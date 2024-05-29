@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="586.0" prefWidth="720.0" style="-fx-background-color: black;" stylesheets="@../../static/css/UI/Home.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="7.0" layoutY="30.0" prefHeight="303.0" prefWidth="301.0">
+         <children>
+            <ImageView fx:id="image" fitHeight="303.0" fitWidth="301.0" pickOnBounds="true" preserveRatio="true" styleClass="border_wrap" />
+         </children>
+      </AnchorPane>
+      <Label fx:id="name" layoutX="90.0" layoutY="360.0" textFill="WHITE">
+         <font>
+            <Font name="SansSerif Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="singer" layoutX="24.0" layoutY="408.0" text="huy" textFill="GREY">
+         <font>
+            <Font name="SansSerif Bold Italic" size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="dura" layoutX="25.0" layoutY="448.0" text="huy" textFill="GREY">
+         <font>
+            <Font name="SansSerif Bold Italic" size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="genre" layoutX="26.0" layoutY="480.0" text="huy" textFill="GREY">
+         <font>
+            <Font name="SansSerif Bold Italic" size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="516.0" layoutY="14.0" text="LYRICS" textFill="WHITE">
+         <font>
+            <Font name="SansSerif Bold" size="21.0" />
+         </font>
+      </Label>
+      <ScrollPane hbarPolicy="NEVER" layoutX="326.0" layoutY="70.0" prefHeight="435.0" prefWidth="392.0" style="-fx-background-color: black;" vbarPolicy="NEVER">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="451.0" prefWidth="394.0" style="-fx-background-color: black;">
+               <children>
+                  <Label fx:id="lyrics" contentDisplay="CENTER" layoutX="-2.0" layoutY="-3.0" prefHeight="454.0" prefWidth="394.0" textFill="#eeeeee">
+                     <font>
+                        <Font name="SansSerif Bold" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+        </content>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </ScrollPane>
+   </children>
+</AnchorPane>

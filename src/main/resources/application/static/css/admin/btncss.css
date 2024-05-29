@@ -1,0 +1,22 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 11 thg 3, 2024, 00:34:40
+    Author     : daoqu
+*/
+
+.button-edit {
+    -fx-background-color: green;
+    -fx-text-fill: white;
+}
+
+.button-delete {
+    -fx-background-color: red;
+    -fx-text-fill: white;
+}
+.button-details {
+    -fx-background-color: blue;
+    -fx-text-fill: white;
+}

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="582.0" prefWidth="720.0" style="-fx-background-color: #dfdfdf;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controller.AdminDashBroardController">
+   <children>
+      <Label layoutX="57.0" layoutY="22.0" text="DashBoard" textFill="#686565">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutY="63.0" prefHeight="176.0" prefWidth="173.0" style="-fx-background-color: #96ca1e;">
+         <children>
+            <Label layoutX="37.0" layoutY="15.0" text="Total Tracks">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="Ttrack" layoutX="69.0" layoutY="78.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <AnchorPane layoutX="181.0" layoutY="63.0" prefHeight="176.0" prefWidth="173.0" style="-fx-background-color: #96ca1e;">
+         <children>
+            <Label layoutX="31.0" layoutY="14.0" text="Total PlayList">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font></Label>
+            <Label fx:id="Tplaylist" layoutX="72.0" layoutY="78.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <AnchorPane layoutX="364.0" layoutY="63.0" prefHeight="179.0" prefWidth="173.0" style="-fx-background-color: #96ca1e;">
+         <children>
+            <Label layoutX="43.0" layoutY="14.0" text="Total User">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font></Label>
+            <Label fx:id="Tuser" layoutX="69.0" layoutY="79.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <AnchorPane layoutX="545.0" layoutY="63.0" prefHeight="179.0" prefWidth="173.0" style="-fx-background-color: #96ca1e;">
+         <children>
+            <Label layoutX="44.0" layoutY="14.0" text="Total Artist">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font></Label>
+            <Label fx:id="Tartist" layoutX="75.0" layoutY="79.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <ImageView fitHeight="36.0" fitWidth="53.0" layoutX="11.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/dashicon.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
